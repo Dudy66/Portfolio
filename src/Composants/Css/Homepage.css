@@ -1,0 +1,109 @@
+/* Styles généraux pour les écrans de bureau */
+.accueil-container-home {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("/src/Composants/images/homepage3.jpg");
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 70px; 
+    align-items: center;
+    margin-top: 0; 
+}
+
+.accueil-section {
+    width: 100%;
+    margin-top: -3em; 
+    padding: 1em 0; 
+}
+
+.accueil-content {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3); 
+}
+
+.accueil-text {
+    font-size: 1.2em;
+    margin-top: 0; 
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .accueil-container-home {
+        padding-top: 80px;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.3);
+        background-blend-mode: overlay;
+    }
+
+    .accueil-content {
+        max-width: 90%;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.7);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .accueil-text {
+        font-size: 1em;
+    }
+
+    .accueil-section {
+        padding: 0.5em 0;
+        margin-top: 0;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+        margin: 20px auto;
+        border-radius: 50%;
+        border: 3px solid rgba(255, 255, 255, 0.3);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .accueil-container-home {
+        padding-top: 80px;
+    }
+
+    .accueil-content {
+        max-width: 95%;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .accueil-text {
+        font-size: 0.9em;
+    }
+
+    .accueil-section {
+        padding: 0.5em 0;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+        margin: 20px auto;
+        border-radius: 50%;
+        border: 3px solid rgba(255, 255, 255, 0.3);
+    }
+}

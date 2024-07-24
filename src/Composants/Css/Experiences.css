@@ -1,0 +1,56 @@
+.cv-section {
+    width: 100%;
+    max-width: 800px; 
+    margin: 0 auto 2em auto; 
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+  }
+  
+  .card {
+    background-color: #444; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .card-body {
+    padding: 15px; 
+  }
+  
+  .card-title {
+    margin: 0 0 8px;
+    font-size: 1.3em; 
+  }
+  
+  .card-subtitle {
+    margin: 0 0 8px;
+    color: #cccccc; 
+  }
+  
+  .card-text {
+    line-height: 1.6;
+  }
+  
+  .card:hover {
+    transform: translateY(-3px); 
+    background-color: #555; 
+  }
+  
+  .cv-section h2 {
+    font-size: 1.6em; 
+    margin-bottom: 1em; 
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    text-align: center;
+  }
+  

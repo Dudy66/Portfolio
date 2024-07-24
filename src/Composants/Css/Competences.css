@@ -1,0 +1,121 @@
+.competences-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 90%;
+  padding: 2em;
+  margin-left: 3em;
+  margin-top: -3.5em;
+}
+
+.cv-section {
+  flex: 1 1 calc(20% - 20px);
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  color: #f8f9fa;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.cv-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cv-skills {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.cv-skills li {
+  width: calc(60% - 10px);
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  width: 15em;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  margin-top: 2em;
+  border-radius: 2em;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.cv-skills li.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cv-skills li:hover {
+  transform: scale(1.05);
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+  .cv-container {
+    padding-top: 80px;
+    justify-content: center;
+  }
+
+  .competences-container {
+    width: 100%;
+    padding: 1em;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    margin-top: -4em;
+    padding-bottom: 80px;
+  }
+
+  .cv-section {
+    flex: 1 1 100%;
+    margin: 10px 0;
+    max-width: 90%;
+  }
+
+  .cv-skills li {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cv-container {
+    padding-top: 60px;
+    justify-content: center;
+  }
+
+  .competences-container {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    margin-top: -4em;
+    padding-bottom: 80px;
+  }
+
+  .cv-section {
+    flex: 1 1 100%;
+    margin: 10px 0;
+    max-width: 100%;
+  }
+
+  .cv-skills li {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
+
+.cv-section h2 {
+  text-align: center;
+}

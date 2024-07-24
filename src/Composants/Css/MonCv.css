@@ -1,0 +1,104 @@
+.cvv-content img {
+    border-radius: 10px; 
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.cvv-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url("/src/Composants/images/homepage3.jpg") center / cover no-repeat;
+    color: white;
+    padding-top: 100px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px; 
+}
+
+.cvv-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    max-width: 800px; 
+    padding: 20px; 
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 20px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); 
+    text-align: center; 
+}
+
+.download-buttons {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 2em;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.download-buttons:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (min-width: 769px) {
+    .cvv-content img {
+        width: 70%; 
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cvv-container {
+        padding-top: 80px;
+    }
+
+    .cvv-content {
+        width: 100%;
+        text-align: center; 
+    }
+
+    .cvv-content img {
+        height: 60vh;
+        width: auto;
+        max-width: 100%; 
+        display: block;
+        margin: 0 auto; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cvv-container {
+        padding-top: 60px;
+    }
+
+    .cvv-content {
+        width: 100%;
+        text-align: center; 
+    }
+
+    .cvv-content img {
+        height: 70vh;
+        width: auto;
+        max-width: 100%; 
+        display: block;
+        margin: 0 auto; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .accueil-container-home {
+        padding-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .accueil-container-home {
+        padding-bottom: 80px;
+    }
+}

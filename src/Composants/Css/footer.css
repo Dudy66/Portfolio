@@ -1,0 +1,44 @@
+.footer-container {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: fixed; 
+    bottom: 0; 
+    width: 100%;
+}
+
+.social-links .social-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+.social-links .social-link:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .social-links .social-link {
+        margin: 0 5px;
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .social-links .social-link {
+        margin: 0 3px;
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 768px) {
+    .footer {
+        display: none; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        display: none; 
+    }
+}
+
